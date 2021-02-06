@@ -83,11 +83,8 @@ public class BatchConfig {
 				.build();
 	}
 
-	/**
-	 * step → 上記のStepで定義したメソッド名に名前を揃える
-	 */
 	@Bean
-	public Job runJob(JobListener listener, Step step1, Step step3) {
+	public Job runJob(JobListener listener, Step step1, Step step3) {// step → 上記のStepで定義したメソッド名に名前を揃える
 		return this.jobBuilderFactory.get("RUNJOB") 
 				.listener(listener)
 				.start(step1)
