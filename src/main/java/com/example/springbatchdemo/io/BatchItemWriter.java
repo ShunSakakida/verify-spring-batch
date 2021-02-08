@@ -1,4 +1,4 @@
-package com.example.springbatchdemo.chunk;
+package com.example.springbatchdemo.io;
 
 import java.util.List;
 

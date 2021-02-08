@@ -1,4 +1,4 @@
-package com.example.springbatchdemo.chunk;
+package com.example.springbatchdemo.io;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

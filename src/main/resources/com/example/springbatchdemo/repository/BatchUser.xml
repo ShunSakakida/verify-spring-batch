@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbatchdemo.repository.BatchUser">
+
+    <!-- 件数取得SQL -->
+    <select id="getMyuser" resultType="com.example.springbatchdemo.entity.MyuserEntity">
+        SELECT name, age
+        FROM myuser 
+        ORDER BY name ASC LIMIT 
+        ${_skiprows}, ${_pagesize}
+    </select>
+</mapper>
