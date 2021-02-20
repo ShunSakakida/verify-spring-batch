@@ -33,6 +33,7 @@ import lombok.AllArgsConstructor;
 
 /**
  * コンフィグ：stepやjobを定義する
+ * https://github.com/kagamihoge/springbatchstudy/blob/master/src/main/java/com/example/kagamihoge/springbatchstudy/withrest/SampleBatchApplication.java
  */
 @Configuration
 @EnableBatchProcessing
@@ -117,7 +118,7 @@ public class BatchConfig {
 
 	@Bean
 	public Job runJob(JobListener listener, Step step1, Step step3) {// step → 上記のStepで定義したメソッド名に名前を揃える
-		return this.jobBuilderFactory.get("RUNJOB")
+		return this.jobBuilderFactory.get("RUNJOB2")
 				.listener(listener)
 				.start(step1)
 				.next(step3)
